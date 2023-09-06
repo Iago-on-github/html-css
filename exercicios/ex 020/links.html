@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        ul {                    
+            font-family: sans-serif;
+        }
+        a {
+            color: rgb(45, 102, 226);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(141, 20, 20);
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            /* SELETORES PERSONALIZADOS
+            # = Id
+            . = Class
+            : = Pseudo-class
+            :: = Pseudo-elements
+            > = Clildren
+            */
+        }
+        a:active {
+            color:aqua;
+        }
+        .especial::before {
+            text-decoration: none;
+            color: darkgray;
+            font-weight: normal;
+        }
+        .especial::after {
+            content: ' [link]';
+            font-weight: normal;
+            color: darkgray;
+            text-decoration: none;       
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://twitter.com" target="_blank" class="especial">Página do Twitter</a></li>
+        <li><a href="https://youtube.com" target="_blank">Canal do YouTube</a></li>  
+    </ul>
+</body>
+</html>

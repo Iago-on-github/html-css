@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídies em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos difentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Imagem-P.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/Imagem-M.png" type="image/png">
+        <img src="imagens/Imagem-G.png"alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/High Noon - TrackTribe.mp3" type="audio/mpeg">
+        <source src="midia/High Noon - TrackTribe.mp3" type="audio/opp">
+        <source src="midia/High Noon - TrackTribe.mp3" type="audio/wav">
+    </audio>
+        <p>Em caso de não reprodução, infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/High Noon - TrackTribe.mp3">Clique Aqui para realizar o download.</a></p> 
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/img-p.png" type="image/x-icon">
+    <title>Imagens Flexíveis</title>
+</head>
+<body>
+    <h1>Testando imagens flexiveis</h1>
+    <p>Essa imagem se adaptará à resolução da tela do seu dispositivo.</p>
+    <picture>
+        <source media="(max-width: 770px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-G.png" alt="Imagem Flexível">
+    </picture>
+</body>
+</html>
+<!--Coloque o max-width da imagem sempre com 50px a mais.-->
