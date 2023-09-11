@@ -6,17 +6,28 @@
     <title>Fundos</title>
     <style>
         body {
-            height: 100vh;
+            height: 140vh;
+            /*
+            background-attachment: fixed;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            */
+
+            /*
+            Shorthand no background:
+            Ordem: Color > image > position > repeat > [size] > attachment          
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            
         }
         
         main {
             background-color: white;
-            width: 500px;
+            max-width: 550px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
