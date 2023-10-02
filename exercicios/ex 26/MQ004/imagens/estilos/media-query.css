@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias
+Mobile – 360 x 640; 375 x 667; 360 x 720
+Tablet – 768 x 1024
+Laptop – 1366 x 768
+Desktop or high-resolution laptop – 1920 x 1080
+*/
+
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        color: black;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa é a versão modificada e exclusiva para a impressão. Para melhor visualização, visite: www.------.com'; 
+        text-decoration: overline;
+    }
+
+    img#phone {display: none;}
+        img#tablet {display: none;}
+        img#pc {display: none;}
+        img#tv {display: none;}
+        img#print {display: block;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../back-tablet.jpg);
+    }
+
+        img#phone {display: none;}
+        img#tablet {display: block;}
+        img#pc {display: none;}
+        img#tv {display: none;}
+        img#print {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1080px) {
+    body {
+        background-image: url(../back-pc.jpg);
+    }
+
+    img#phone {display: none;}
+        img#tablet {display: none;}
+        img#pc {display: block;}
+        img#tv {display: none;}
+        img#print {display: none;}
+}
+
+@media screen and (min-width: 1080px) {
+    body {
+        background-image: url(../back-tv.jpg);
+    }
+
+    main {
+        width: 600px;
+    }
+
+    img#phone {display: none;}
+        img#tablet {display: none;}
+        img#pc {display: none;}
+        img#tv {display: block;}
+        img#print {display: none;}
+}
